@@ -23,12 +23,12 @@ More resources on this topic can be found by using the search feature on this si
 The code in this repository was derived from the algorithms and BASIC computer programs that you will find in the documents listed below. Translating this information into working, modern code was extremely challenging and you may find it impractical to revisit that process. You may find the information in these texts useful, however, to better understand the principles involved.
 
 ### There are two 'gotchas' to look out for if you choose to write your own code based on the information in these texts. 
-1. The table of LORAN towers uses an arcane format for LAT and LON coordinates. They appear to be decimal, but they are actually the Degrees followed by a concatenated string of the Minutes, and decimal Seconds, so 36 40 44.221 is represented as 36.4044221
+1. The table of LORAN towers uses an arcane format for LAT and LON coordinates. They appear to be decimal, but they are actually the Degrees followed by a concatenated string of the Minutes, and decimal Seconds, so 36 40 44.221 is represented as 36.4044221 (note that the tower coordinates in our chainModel.php are in standard format so that they can be updated or edited without this complexity)
 
 2. The second quirk stems from the fact that these texts assume that all points being located are in the region of North America, and consequently a positive longitude indicates a longitude west of the prime meridien, which is the opposite of the norm in which points west of the prime meridien are designated as negative. This was likely done for convenience, but it can cause a lot of confusion 
 
 ### How to add tower chains
-If you find that you need more tower chain definitions than are included in this repository, you can simply add them into the JSON in chainModel.php. You should be able to find historical lists of these LORAN-C towers by searching <https://discover.dtic.mil/>
+If you find that you need more tower chain definitions than are included in this repository, you can simply add them into the JSON in chainModel.php (the coordinates in chainModel.php use standard format, rather than the proprietary format described in 'gotcha' number 1 above). You should be able to find historical lists of these LORAN-C towers by searching <https://discover.dtic.mil/>. Remember, when referencing these texts, to identify whether any coordinates in decimal format are truly in decimal format, and whether negative longitudes are actually West or East of the prime meridien.
 
 ## Documents Referenced in Developing NOAA's Loran Conversion Application
 
