@@ -28,7 +28,7 @@ The code in this repository was derived from the algorithms and BASIC computer p
 2. The second quirk stems from the fact that these texts assume that all points being located are in the region of North America, and consequently a positive longitude indicates a longitude west of the prime meridien, which is the opposite of the norm in which points west of the prime meridien are designated as negative. This was likely done for convenience, but it can cause a lot of confusion 
 
 ### How to add tower chains
-If you find that you need more tower chain definitions than are included in this repository, you can simply add them into the JSON in chainModel.php (the coordinates in chainModel.php use standard format, rather than the proprietary format described in 'gotcha' number 1 above). You should be able to find historical lists of these LORAN-C towers by searching <https://discover.dtic.mil/>. Remember, when referencing these texts, to identify whether any coordinates in decimal format are truly in decimal format, and whether negative longitudes are actually West or East of the prime meridien.
+If you find that you need more tower chain definitions than are included in this repository, you can simply add them into the JSON in chainModel.php (the coordinates in chainModel.php use standard format, rather than the proprietary format described in 'gotcha' number 1 above). You should be able to find historical lists of these LORAN-C towers by searching <https://discover.dtic.mil/>. Remember, when referencing these texts, to identify whether any coordinates in decimal format are truly in decimal format, and whether positive longitudes are actually West or East of the prime meridien.
 
 ## Documents Referenced in Developing NOAA's Loran Conversion Application
 
