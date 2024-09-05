@@ -15,7 +15,10 @@ NOTE: LORAN-C has been deprecated: no LORAN towers now exist. However, many fish
 
 ## More Information
 
-More resources on this topic can be found by using the search feature on this site.  
+More resources on this topic can be found here:  
+<https://www.gps.gov/policy/legislation/loran-c/>
+
+and by using the search feature on this site:  
 <https://discover.dtic.mil/>
 
 ## Some Advice for Developers
